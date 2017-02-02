@@ -21,6 +21,7 @@ https://www.jeremieleroy.com
 * Run in iOS Simulator
 * Select a Network type and hit the **Download** button
 
+![Image of iOS Simulator]
 (https://www.jeremieleroy.com/files/news/2017/xojo_ThrottleSocket.png)
 
 ## Install in your app
