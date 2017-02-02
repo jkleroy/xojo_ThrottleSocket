@@ -36,6 +36,7 @@ Begin iosView View1
       AutoLayout      =   Table1, 2, <Parent>, 2, False, +1.00, 1, 1, -0, 
       AutoLayout      =   Table1, 3, Label1, 4, False, +1.00, 1, 1, *kStdControlGapV, 
       EditingEnabled  =   False
+      EditingEnabled  =   False
       EstimatedRowHeight=   -1
       Format          =   "0"
       Height          =   270.0
@@ -50,12 +51,17 @@ Begin iosView View1
    Begin JLY_ThrottlingSocket socket
       delayMS         =   0
       downKbs         =   0
+      Left            =   0
       LockedInPosition=   False
+      PanelIndex      =   -1
+      Parent          =   ""
       Scope           =   0
       startCallSeconds=   0.0
       throttling      =   ""
+      Top             =   0
       upKbs           =   0
       ValidateCertificates=   False
+      Wait            =   0.0
    End
    Begin iOSProgressBar ProgressBar1
       AccessibilityHint=   ""
@@ -153,7 +159,7 @@ End
 		  
 		  Dim cell As iOSTableCellData
 		  
-		  me.AddSection("Select Throttle network")
+		  me.AddSection("Select Network Type")
 		  
 		  Cell = me.CreateCell("None")
 		  Cell.Tag = JLY_throttlingSocket.throttlingTypes.None
@@ -202,7 +208,7 @@ End
 		  Dim dlTime As Double = xojo.core.date.Now.SecondsFrom1970 - startTime.SecondsFrom1970
 		  
 		  label1.text = "500k file downloaded in " + dlTime.ToText + " seconds with " +_
-		   me.Wait.ToText(locale.Current, "#,###") + " milliseconds delay"
+		  me.Wait.ToText(locale.Current, "#,###") + " milliseconds delay"
 		End Sub
 	#tag EndEvent
 	#tag Event
@@ -256,11 +262,6 @@ End
 		Name="NavigationBarVisible"
 		Group="Behavior"
 		Type="Boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="startTime"
-		Group="Behavior"
-		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Super"
