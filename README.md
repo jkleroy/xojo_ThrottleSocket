@@ -21,6 +21,8 @@ https://www.jeremieleroy.com
 * Run in iOS Simulator
 * Select a Network type and hit the **Download** button
 
+(https://www.jeremieleroy.com/files/news/2017/xojo_ThrottleSocket.png)
+
 ## Install in your app
 
 Simply copy the **JLY_ThrottlingSocket** class to your project.

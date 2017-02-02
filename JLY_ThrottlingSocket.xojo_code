@@ -82,7 +82,7 @@ Inherits xojo.net.httpsocket
 		  // Calling the overridden superclass constructor.
 		  Super.Constructor
 		  
-		  self.throttling = throttlingTypes.None
+		  self.throttling = throttlingTypes.Regular_3G
 		End Sub
 	#tag EndMethod
 

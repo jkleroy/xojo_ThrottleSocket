@@ -207,7 +207,7 @@ End
 		  
 		  Dim dlTime As Double = xojo.core.date.Now.SecondsFrom1970 - startTime.SecondsFrom1970
 		  
-		  label1.text = "500k file downloaded in " + dlTime.ToText + " seconds with " +_
+		  label1.text = "500k file downloaded in " + dlTime.ToText(locale.current, "#.###") + " seconds with " +_
 		  me.Wait.ToText(locale.Current, "#,###") + " milliseconds delay"
 		End Sub
 	#tag EndEvent
