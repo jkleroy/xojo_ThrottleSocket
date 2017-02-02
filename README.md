@@ -9,6 +9,8 @@ Some network request might seem extremely fast in the simulator and not need a P
 
 This class will help you check how slow your App can be when used on cellular networks.
 
+For security purposes, the ThrottleSocket will not apply any delay in production (built) apps.
+
 https://www.jeremieleroy.com
 
 ## Testing the socket
