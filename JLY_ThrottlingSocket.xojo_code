@@ -8,6 +8,7 @@ Inherits xojo.net.httpsocket
 		    Return
 		  #endif
 		  if self.throttling = throttlingTypes.None then
+		    mWait = 0
 		    RaiseEvent PageReceived(URL, HTTPStatus, Content)
 		    Return
 		  end if
